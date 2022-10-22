@@ -1,0 +1,8 @@
+{
+    "name": "neomn/laravel_auth_api",
+    "description": "api authentication",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
