@@ -4,7 +4,7 @@ namespace App\Providers\package\laravel_auth_api\src;
 
 use Illuminate\Support\ServiceProvider;
 
-class ApiAuthenticationServiceProvider extends ServiceProvider
+class ApiAuthServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
