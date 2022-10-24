@@ -4,5 +4,12 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "neomn\\laravel-auth-api\\MyServiceProvider"
+            ]
+        }
+    }
 }
