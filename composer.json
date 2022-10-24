@@ -4,7 +4,5 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
-
-    "aSimpleTestByNeo": "remove this latter, ok?"
+    "require": {}
 }
