@@ -8,7 +8,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "neomn\\laravel-auth-api\\MyServiceProvider"
+                "neomn\\laravel-auth-api\\src\\LaravelAuthApiServiceProvider"
             ]
         }
     }
