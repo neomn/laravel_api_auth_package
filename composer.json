@@ -5,6 +5,11 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {},
+    "autoload": {
+        "psr-4": {
+            "neomn\\laravel-auth-api\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
