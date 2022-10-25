@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers\package\laravel_auth_api\src;
+namespace neomn\laravel_auth_api;
 
 use Illuminate\Support\ServiceProvider;
 
