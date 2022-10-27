@@ -1,5 +1,5 @@
 {
-    "name": "neomn/laravel_auth_api",
+    "name": "neomn/laravel-auth-api",
     "description": "api authentication",
     "type": "library",
     "license": "MIT",
