@@ -1,19 +1,19 @@
 {
-    "name": "neomn/laravel_auth_api",
+    "name": "neomn/neoauth",
     "description": "api authentication",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+
     "autoload": {
         "psr-4": {
-            "neomn\\laravel-auth-api\\": "src/"
+            "neomn\\neoauth\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "neomn\\laravel-auth-api\\src\\LaravelAuthApiServiceProvider"
+                "LaraAuthApiServiceProvider"
             ]
         }
     }

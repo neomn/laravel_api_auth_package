@@ -1,10 +1,10 @@
 <?php
 
-namespace neomn\laravel_auth_api;
+namespace neomn\LaraAuthApi;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelAuthApiServiceProvider extends ServiceProvider
+class LaraAuthApiServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
