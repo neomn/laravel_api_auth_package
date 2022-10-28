@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\LaraAuthApi;
+namespace neomn\laraauthapi;
 
 use Illuminate\Support\ServiceProvider;
 

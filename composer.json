@@ -7,13 +7,13 @@
 
     "autoload": {
         "psr-4": {
-            "neomn\\LaraAuthApi\\": "src/"
+            "neomn\\laraauthapi\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaraAuthApiServiceProvider"
+                "neomn\\laraauthapi\\LaraAuthApiServiceProvider"
             ]
         }
     }
