@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "neomn\\laravel-auth-api\\src\\LaravelAuthApiServiceProvider"
+                "neomn\\laravel-auth-api\\LaravelAuthApiServiceProvider"
             ]
         }
     }
