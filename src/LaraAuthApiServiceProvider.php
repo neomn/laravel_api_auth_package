@@ -13,7 +13,6 @@ class LaraAuthApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        dd('neo first package  :) ');
     }
 
     /**
