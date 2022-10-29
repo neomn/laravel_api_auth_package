@@ -13,6 +13,7 @@ class LaraAuthApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
     }
 
     /**
