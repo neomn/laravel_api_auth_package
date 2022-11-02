@@ -7,9 +7,15 @@ $authMethods = [
     'social_media'=>'social_media',
 ];
 
+$twoFactorAuthMethod = [
+    'phone_number'=>'phone_number',
+    'email'=>'email',
+    'google_authenticator'=>'google_authenticator',
+];
+
 return [
     'auth'=>[
-        'authDefaultMethod'=> $authMethods['username'],
-        '2factorAuth'=>false,
+        'defaultAuthMethod'=> $authMethods['username'],
+        'defaultTwoFactorAuthMethod'=>'disable',
     ],
 ];
