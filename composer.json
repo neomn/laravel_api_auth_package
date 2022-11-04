@@ -10,6 +10,11 @@
             "neomn\\laraauthapi\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "neomn\\laraauthapi\\tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
