@@ -1,0 +1,7 @@
+#env:
+#  - DB_CONNECTION="mysql"
+#  - DB_USERNAME="homestead"
+#  - DB_PASSWORD="secret"
+
+#providers:
+#  - Laravel\Passport\PassportServiceProvider
