@@ -6,7 +6,7 @@ use neomn\laraauthapi\LaraAuthApiServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase {
 
-    public $loadEnvironmentVariables = true;
+//    public $loadEnvironmentVariables = true;
 
     public function getPackageProviders($app)
     {
