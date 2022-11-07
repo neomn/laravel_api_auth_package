@@ -10,4 +10,5 @@ Route::middleware('auth:api')->prefix('auth')->group(function (){
     Route::post('register', [AuthController::class,'register'])->withoutMiddleware('auth:api');
     Route::post('verify-user', [AuthController::class,'verifyUser'])->withoutMiddleware('auth:api');
     Route::post('update-phone-number', [AuthController::class,'updatePhoneNumber']);
+    Route::post('update-user-info', [AuthController::class,'updatePhoneNumber']);
 });
