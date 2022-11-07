@@ -12,4 +12,5 @@ Route::middleware('auth:api')->prefix('auth')->group(function (){
     Route::post('forget-password', [AuthController::class,'forgetPassword'])->withoutMiddleware('auth:api');
     Route::post('update-phone-number', [AuthController::class,'updatePhoneNumber']);
     Route::post('update-user-info', [AuthController::class,'updateUserInfo']);
+    Route::post('logout', [AuthController::class,'logout']);
 });
