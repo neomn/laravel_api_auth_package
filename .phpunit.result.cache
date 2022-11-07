@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Warning":6},"times":{"Warning":0.003}}
+{"version":1,"defects":{"Warning":6},"times":{"Warning":0.003,"neomn\\laraauthapi\\tests\\Feature\\SampleTest::test_example_two":0.303}}
