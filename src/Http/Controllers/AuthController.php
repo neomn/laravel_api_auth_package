@@ -6,7 +6,7 @@ class AuthController extends Controller
 {
     public function login()
     {
-
+        return response()->json('login');
     }
 
     public function register()
