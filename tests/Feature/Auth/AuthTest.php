@@ -14,6 +14,7 @@ class AuthTest extends TestCase
         $forgetPasswordResponse = $this->post('api/auth/forge-password');
         $updatePhoneNumberResponse = $this->post('api/auth/update-phone-number');
         $updateUserInfoResponse = $this->post('api/auth/update-user-info');
+        $logoutResponse = $this->post('api/auth/logout');
 //        $response->assertJson('auth/login',);
 
     }
