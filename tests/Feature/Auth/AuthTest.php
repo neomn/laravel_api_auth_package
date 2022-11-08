@@ -10,6 +10,7 @@ class AuthTest extends TestCase
     {
         $loginResponse = $this->post('api/auth/login');
         $registerResponse = $this->post('api/auth/register');
+        $verifyUserResponse = $this->post('api/auth/register');
 //        $response->assertJson('auth/login',);
 
     }
