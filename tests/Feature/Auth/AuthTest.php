@@ -15,7 +15,13 @@ class AuthTest extends TestCase
         $updatePhoneNumberResponse = $this->post('api/auth/update-phone-number');
         $updateUserInfoResponse = $this->post('api/auth/update-user-info');
         $logoutResponse = $this->post('api/auth/logout');
-//        $response->assertJson('auth/login',);
 
+        $this->assertTrue($this->endpointExists($loginResponse));
+    }
+
+    public function endpointExists( $uri)
+    {
+        $headers = get_headers('http://127.0.0.1/api/auth/login');
+        return $headers || strpos($headers[0] , '200');
     }
 }
