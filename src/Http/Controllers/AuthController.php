@@ -16,7 +16,7 @@ class AuthController extends Controller
 
     public function verifyUser()
     {
-
+        return response()->json('verify user');
     }
 
     public function updatePhoneNumber()
