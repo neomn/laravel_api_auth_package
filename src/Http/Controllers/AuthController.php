@@ -21,7 +21,7 @@ class AuthController extends Controller
 
     public function updatePhoneNumber()
     {
-
+        return response()->json('update phone number');
     }
 
     public function updateUserInfo()
