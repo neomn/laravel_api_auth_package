@@ -11,7 +11,7 @@ class AuthController extends Controller
 
     public function register()
     {
-
+        return response()->json('register');
     }
 
     public function verifyUser()
