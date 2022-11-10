@@ -31,7 +31,7 @@ class AuthController extends Controller
 
     public function forgetPassword()
     {
-
+        return response()->json('forget password');
     }
 
     public function logout(){
