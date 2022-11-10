@@ -26,7 +26,7 @@ class AuthController extends Controller
 
     public function updateUserInfo()
     {
-
+        return response()->json('update user info');
     }
 
     public function forgetPassword()
