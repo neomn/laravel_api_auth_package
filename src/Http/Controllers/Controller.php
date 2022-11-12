@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laraauthapi\Http\Controllers;
+namespace neomn\laravel_auth_api\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
