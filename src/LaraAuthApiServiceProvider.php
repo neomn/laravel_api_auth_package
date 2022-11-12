@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laraauthapi;
+namespace neomn\laravel_auth_api;
 
 use Illuminate\Support\ServiceProvider;
 

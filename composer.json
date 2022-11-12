@@ -1,24 +1,24 @@
 {
-    "name": "neomn/laraauthapi",
-    "description": "api authentication",
+    "name": "neomn/laravel_auth_api",
+    "description": "api authentication for laravel projects",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
 
     "autoload": {
         "psr-4": {
-            "neomn\\laraauthapi\\": "src/"
+            "neomn\\laravel_auth_api\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "neomn\\laraauthapi\\tests\\": "tests/"
+            "neomn\\laravel_auth_api\\tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "neomn\\laraauthapi\\LaraAuthApiServiceProvider"
+                "neomn\\laravel_auth_api\\LaraAuthApiServiceProvider"
             ]
         }
     },
