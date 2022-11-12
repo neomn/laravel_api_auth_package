@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laraauthapi\Http\Controllers;
+namespace neomn\laravel_auth_api\Http\Controllers;
 
 class AuthController extends Controller
 {
