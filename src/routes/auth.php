@@ -1,9 +1,9 @@
 <?php
 
-namespace neomn\laraauthapi\routes;
+namespace neomn\laravel_auth_api\routes;
 
 use Illuminate\Support\Facades\Route;
-use neomn\laraauthapi\Http\Controllers\AuthController;
+use neomn\laravel_auth_api\Http\Controllers\AuthController;
 Route::prefix('api')->middleware('auth:api')->group(function (){
 
     Route::prefix('auth')->group(function (){
