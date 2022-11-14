@@ -1,8 +1,8 @@
 <?php
 
-namespace neomn\laraauthapi\tests;
+namespace neomn\laravel_auth_api\tests;
 
-use neomn\laraauthapi\LaraAuthApiServiceProvider;
+use neomn\laravel_auth_api\LaraAuthApiServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase {
 
