@@ -22,6 +22,11 @@ class AuthRoutesExistsTest extends TestCase
         $this->assertTrue($loginResponse->status() != 404);
     }
 
+    public function test_forget_password_route_exists(){
+        $loginResponse = $this->post('api/auth/forget-password');
+        $this->assertTrue($loginResponse->status() != 404);
+    }
+
 
     public function test_auth_routes_exists()
     {
@@ -29,7 +34,7 @@ class AuthRoutesExistsTest extends TestCase
             'login' => $loginResponse = $this->post('api/auth/login'),
             'register' => $registerResponse = $this->post('api/auth/register'),
             'verify-user' => $verifyUserResponse = $this->post('api/auth/verify-user'),
-            'forge-password' => $forgetPasswordResponse = $this->post('api/auth/forge-password'),
+            'forge-password' => $forgetPasswordResponse = $this->post('api/auth/forget-password'),
         ];
         foreach($endpoints_not_requiring_auth as $key => $endpoint){
            echo ('checking >> ' . $key);
