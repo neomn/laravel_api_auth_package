@@ -12,6 +12,11 @@ class AuthRoutesExistsTest extends TestCase
         $this->assertTrue($loginResponse->status() != 404);
     }
 
+    public function test_register_route_exists(){
+        $loginResponse = $this->post('api/auth/register');
+        $this->assertTrue($loginResponse->status() != 404);
+    }
+
     public function test_auth_routes_exists()
     {
         $endpoints_not_requiring_auth = [
