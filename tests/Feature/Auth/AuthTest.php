@@ -1,8 +1,8 @@
 <?php
 
-namespace neomn\laraauthapi\tests\Feature\Auth;
+namespace neomn\laravel_auth_api\tests\Feature\Auth;
 
-use neomn\laraauthapi\tests\TestCase;
+use neomn\laravel_auth_api\tests\TestCase;
 
 class AuthTest extends TestCase
 {
