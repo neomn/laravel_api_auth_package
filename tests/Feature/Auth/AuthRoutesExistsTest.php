@@ -7,6 +7,11 @@ use neomn\laravel_auth_api\tests\TestCase;
 
 class AuthRoutesExistsTest extends TestCase
 {
+    public function test_login_route_exists(){
+        $loginResponse = $this->post('api/auth/login');
+        $this->assertTrue($loginResponse->status() != 404);
+    }
+
     public function test_auth_routes_exists()
     {
         $endpoints_not_requiring_auth = [
