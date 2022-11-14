@@ -37,5 +37,5 @@ class AuthRoutesExistsTest extends TestCase
 //            $this->assertTrue($endpoint->status() == 401);
 //        }
 
-    }
+
 }
