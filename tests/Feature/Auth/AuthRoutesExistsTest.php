@@ -7,22 +7,31 @@ use neomn\laravel_auth_api\tests\TestCase;
 
 class AuthRoutesExistsTest extends TestCase
 {
-    public function test_login_route_exists(){
+    protected function withoutExceptionHandling(array $except = [])
+    {
+
+    }
+
+    public function test_login_route_exists()
+    {
         $loginResponse = $this->post('api/auth/login');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
-    public function test_register_route_exists(){
+    public function test_register_route_exists()
+    {
         $loginResponse = $this->post('api/auth/register');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
-    public function test_verify_user_route_exists(){
+    public function test_verify_user_route_exists()
+    {
         $loginResponse = $this->post('api/auth/verify-user');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
-    public function test_forget_password_route_exists(){
+    public function test_forget_password_route_exists()
+    {
         $loginResponse = $this->post('api/auth/forget-password');
         $this->assertTrue($loginResponse->status() != 404);
     }
@@ -41,7 +50,7 @@ class AuthRoutesExistsTest extends TestCase
 
     public function test_logout_route_exists()
     {
-        $response = $this->post('api/auth/logout');
+        $response = $this->json('post' ,'api/auth/logout');
         $response->assertStatus(401);
     }
 }

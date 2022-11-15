@@ -4,7 +4,8 @@ namespace neomn\laravel_auth_api\routes;
 
 use Illuminate\Support\Facades\Route;
 use neomn\laravel_auth_api\Http\Controllers\AuthController;
-Route::prefix('api')->middleware('auth:api')->group(function (){
+
+Route::prefix('api')->middleware('auth')->group(function (){
 
     Route::prefix('auth')->group(function (){
         Route::post('login', [AuthController::class,'login'])->withoutMiddleware('auth:api');
