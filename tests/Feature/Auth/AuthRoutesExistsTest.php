@@ -44,15 +44,4 @@ class AuthRoutesExistsTest extends TestCase
         $response = $this->post('api/auth/logout');
         $response->assertStatus(401);
     }
-
-
-//        $endpoints_requiring_auth = [
-//            $updatePhoneNumberResponse = $this->post('api/auth/update-phone-number'),
-//            $updateUserInfoResponse = $this->post('api/auth/update-user-info'),
-//            $logoutResponse = $this->post('api/auth/logout'),
-//        ];
-//        foreach($endpoints_requiring_auth as $key => $endpoint){
-//            $this->assertTrue($endpoint->status() == 401);
-//        }
-
 }
