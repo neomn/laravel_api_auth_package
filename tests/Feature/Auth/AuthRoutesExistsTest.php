@@ -33,6 +33,12 @@ class AuthRoutesExistsTest extends TestCase
         $response->assertStatus(401);
     }
 
+    public function test_update_user_info_route_exists()
+    {
+        $response = $this->post('api/auth/update-user-info');
+        $response->assertStatus(401);
+    }
+
 
 //        $endpoints_requiring_auth = [
 //            $updatePhoneNumberResponse = $this->post('api/auth/update-phone-number'),
