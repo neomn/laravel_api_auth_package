@@ -27,6 +27,12 @@ class AuthRoutesExistsTest extends TestCase
         $this->assertTrue($loginResponse->status() != 404);
     }
 
+    public function test_update_phone_number_route_exists()
+    {
+        $response = $this->post('api/auth/update-phone-number');
+        $response->assertStatus(401);
+    }
+
 
 //        $endpoints_requiring_auth = [
 //            $updatePhoneNumberResponse = $this->post('api/auth/update-phone-number'),
@@ -36,6 +42,5 @@ class AuthRoutesExistsTest extends TestCase
 //        foreach($endpoints_requiring_auth as $key => $endpoint){
 //            $this->assertTrue($endpoint->status() == 401);
 //        }
-
 
 }
