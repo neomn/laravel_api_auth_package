@@ -22,6 +22,9 @@
             ]
         }
     },
+    "require": {
+        "tymon/jwt-auth": "@stable"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
         "orchestra/testbench": "6.0",
