@@ -48,6 +48,11 @@ class AuthOperationsTest extends TestCase
         $response->assertStatus(401);
     }
 
+    public function test_registered_successfully()
+    {
+        $this->assertTrue(false);
+    }
+
     public function test_logged_in_successfully()
     {
         $this->assertTrue(false);
