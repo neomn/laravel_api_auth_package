@@ -38,7 +38,7 @@ class AuthRoutesExistsTest extends TestCase
 
     public function test_update_phone_number_route_exists()
     {
-        $response = $this->post('api/auth/update-phone-number');
+        $response = $this->json('post' ,'api/auth/update-phone-number');
         $response->assertStatus(401);
     }
 
