@@ -7,11 +7,6 @@ use neomn\laravel_auth_api\tests\TestCase;
 
 class AuthRoutesExistsTest extends TestCase
 {
-    protected function withoutExceptionHandling(array $except = [])
-    {
-
-    }
-
     public function test_login_route_exists()
     {
         $loginResponse = $this->post('api/auth/login');
