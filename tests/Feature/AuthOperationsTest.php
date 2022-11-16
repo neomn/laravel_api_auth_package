@@ -2,10 +2,9 @@
 
 namespace neomn\laravel_auth_api\tests\Feature;
 
-use Illuminate\Support\Facades\Log;
 use neomn\laravel_auth_api\tests\TestCase;
 
-class AuthRoutesExistsTest extends TestCase
+class AuthOperationsTest extends TestCase
 {
     public function test_login_route_exists()
     {
