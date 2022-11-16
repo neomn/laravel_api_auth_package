@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laravel_auth_api\tests\Feature\Auth;
+namespace neomn\laravel_auth_api\tests\Feature;
 
 use Illuminate\Support\Facades\Log;
 use neomn\laravel_auth_api\tests\TestCase;
@@ -48,4 +48,6 @@ class AuthRoutesExistsTest extends TestCase
         $response = $this->json('post' ,'api/auth/logout');
         $response->assertStatus(401);
     }
+
+
 }
