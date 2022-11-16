@@ -11,9 +11,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function __construct()
-    {
-        auth()->setDefaultDriver('api');
-    }
-
+//    public function __construct()
+//    {
+//        auth()->setDefaultDriver('api');
+//    }
 }
