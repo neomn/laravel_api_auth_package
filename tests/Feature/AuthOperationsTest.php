@@ -73,4 +73,8 @@ class AuthOperationsTest extends TestCase
         $this->assertTrue(false);
     }
 
+    public function test_update_user_info()
+    {
+        $this->assertTrue(false);
+    }
 }
