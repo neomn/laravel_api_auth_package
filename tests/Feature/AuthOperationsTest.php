@@ -63,4 +63,9 @@ class AuthOperationsTest extends TestCase
         $this->assertTrue(false);
     }
 
+    public function test_forgotten_password_recover_account()
+    {
+        $this->assertTrue(false);
+    }
+
 }
