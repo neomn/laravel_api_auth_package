@@ -58,4 +58,9 @@ class AuthOperationsTest extends TestCase
         $this->assertTrue(false);
     }
 
+    public function test_user_verified_successfully()
+    {
+        $this->assertTrue(false);
+    }
+
 }
