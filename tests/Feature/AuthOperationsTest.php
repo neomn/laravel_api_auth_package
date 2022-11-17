@@ -77,4 +77,9 @@ class AuthOperationsTest extends TestCase
     {
         $this->assertTrue(false);
     }
+
+    public function test_logout()
+    {
+        $this->assertTrue(false);
+    }
 }
