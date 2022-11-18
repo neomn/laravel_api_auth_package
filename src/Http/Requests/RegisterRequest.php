@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace neomn\laravel_auth_api\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
