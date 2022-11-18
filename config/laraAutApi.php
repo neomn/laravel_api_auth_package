@@ -22,4 +22,7 @@ return [
         'email' => true,
         'google_authenticator' => true,
     ],
+
+    // force every single user to use two-factor authentication
+    $mandatoryTwoFactorAuthentication = false,
 ];
