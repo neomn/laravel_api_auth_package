@@ -8,10 +8,10 @@ use neomn\laravel_auth_api\Http\Controllers\AuthController;
 Route::prefix('api')->middleware('auth')->group(function (){
 
     Route::prefix('auth')->group(function (){
-        Route::post('login', [AuthController::class,'login'])->withoutMiddleware('auth:api');
-        Route::post('register', [AuthController::class,'register'])->withoutMiddleware('auth:api');
-        Route::post('verify-user', [AuthController::class,'verifyUser'])->withoutMiddleware('auth:api');
-        Route::post('forget-password', [AuthController::class,'forgetPassword'])->withoutMiddleware('auth:api');
+        Route::post('login', [AuthController::class,'login'])->withoutMiddleware('auth');
+        Route::post('register', [AuthController::class,'register'])->withoutMiddleware('auth');
+        Route::post('verify-user', [AuthController::class,'verifyUser'])->withoutMiddleware('auth');
+        Route::post('forget-password', [AuthController::class,'forgetPassword'])->withoutMiddleware('auth');
         Route::post('update-phone-number', [AuthController::class,'updatePhoneNumber']);
         Route::post('update-user-info', [AuthController::class,'updateUserInfo']);
         Route::post('logout', [AuthController::class,'logout']);
