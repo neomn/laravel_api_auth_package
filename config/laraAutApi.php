@@ -8,17 +8,17 @@ $registrationMethods = [
     'social_media'=>true,
 ];
 
-$authMethods = [
-    'username'=>'username',
-    'email'=>'email',
-    'phone_number'=>'phone_number',
-    'social_media'=>'social_media',
+$loginMethods = [
+    'username'=>true,
+    'email'=>true,
+    'phone_number'=>true,
+    'social_media'=>true,
 ];
 
 $twoFactorAuthMethod = [
-    'phone_number'=>'phone_number',
-    'email'=>'email',
-    'google_authenticator'=>'google_authenticator',
+    'phone_number'=>true,
+    'email'=>true,
+    'google_authenticator'=>true,
 ];
 
 return [
