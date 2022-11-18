@@ -1,7 +1,10 @@
 <?php
 
 $registerMethods = [
-
+    'phone_number'=>true,
+    'email'=>true,
+    'username'=>true,
+    'social_media'=>true,
 ];
 
 $authMethods = [
