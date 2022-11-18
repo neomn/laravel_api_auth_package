@@ -1,5 +1,9 @@
 <?php
 
+$loginMethod = [
+
+];
+
 $authMethods = [
     'username'=>'username',
     'email'=>'email',
