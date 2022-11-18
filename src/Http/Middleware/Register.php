@@ -5,7 +5,7 @@ namespace neomn\laravel_auth_api\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class RegisterMiddleware
+class Register
 {
     /**
      * Handle an incoming request.
