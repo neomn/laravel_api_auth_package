@@ -1,6 +1,7 @@
 <?php
 
-$registerMethods = [
+// set registration method to true/false to set them enable/disable
+$registrationMethods = [
     'phone_number'=>true,
     'email'=>true,
     'username'=>true,
