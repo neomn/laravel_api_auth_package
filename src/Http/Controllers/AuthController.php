@@ -2,7 +2,7 @@
 
 namespace neomn\laravel_auth_api\Http\Controllers;
 
-use neomn\laravel_auth_api\Http\Requests\RegisterRequest;
+use neomn\laravel_auth_api\Http\Requests\Register\RegisterRequest;
 
 class AuthController extends Controller
 {
