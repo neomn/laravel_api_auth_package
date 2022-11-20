@@ -4,7 +4,7 @@ namespace neomn\laravel_auth_api\Http\Requests\Register;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RegisterUsingUserNameRequest extends FormRequest
+class RegisterRequest extends FormRequest
 {
 
     /**
