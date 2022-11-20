@@ -25,11 +25,11 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name'=>'',
-            'last_name'=>'',
-            'phone_number'=>'',
-            'username'=>'',
-            'email'=>'',
+            'first_name'=>'sometimes',
+            'last_name'=>'sometimes',
+            'phone_number'=>'sometimes',
+            'username'=>'sometimes',
+            'email'=>'alpha_spaces',
         ];
     }
 }
