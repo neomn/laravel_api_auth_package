@@ -4,6 +4,7 @@ namespace neomn\laravel_auth_api\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 
 class Register
 {
@@ -16,6 +17,9 @@ class Register
      */
     public function handle(Request $request, Closure $next)
     {
+
+        return response()->json($this->registrationMethodIsNotValid('email'));
+
         // identify registration method (username/email/social-media/phone-number)
 
 
@@ -29,8 +33,14 @@ class Register
 
     }
 
-    private function registrationMethodIsActive() : bool
+    private function registrationMethodIsActive(string $method) : bool
     {
 
+    }
+
+    public function registrationMethodIsNotValid(string $method)
+    {
+        $registratoinMethods = Config::get('laraAuthApi');
+        return $registratoinMethods;
     }
 }

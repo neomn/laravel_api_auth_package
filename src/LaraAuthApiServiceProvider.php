@@ -22,7 +22,7 @@ class LaraAuthApiServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../config/laraAutApi.php'=>config_path('laraAuthApi.php'),
-        ]);
+        ],'laravelAuthApi-config');
 
         $this->loadRoutesFrom(__DIR__.'/routes/auth.php');
 
