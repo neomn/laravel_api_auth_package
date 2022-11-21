@@ -12,14 +12,14 @@ class Register
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
     public function handle(Request $request, Closure $next)
     {
 
-        return response()->json($this->registrationMethodIsNotValid('email4'));
+        return response()->json($this->registrationMethodIsActive('email'));
 
         // identify registration method (username/email/social-media/phone-number)
 
@@ -30,18 +30,20 @@ class Register
         return $next($request);
     }
 
-    private function identifyRegistrationMethod(){
+    private function identifyRegistrationMethod()
+    {
 
     }
 
     private function registrationMethodIsActive(string $method)
     {
-
+        $registratoinMethod = Config::get('laraAuthApi.registrationMethods.' . $method);
+        return $registratoinMethod === true;
     }
 
     public function registrationMethodIsNotValid(string $method)
     {
-        $registratoinMethod = Config::get('laraAuthApi.registrationMethods.'.$method);
+        $registratoinMethod = Config::get('laraAuthApi.registrationMethods.' . $method);
         return empty($registratoinMethod);
     }
 }
