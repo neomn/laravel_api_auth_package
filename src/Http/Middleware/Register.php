@@ -16,16 +16,16 @@ class Register
      */
     public function handle(Request $request, Closure $next)
     {
-        // identify incoming request type (username/email/social-media/phone-number)
+        // identify registration method (username/email/social-media/phone-number)
 
 
-        //check if the request type is active
+        //check if the registration method is active
 
 
         return $next($request);
     }
 
-    private function identifyRequestType(){
+    private function identifyRegistrationMethod(){
 
     }
 
