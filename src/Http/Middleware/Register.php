@@ -29,7 +29,7 @@ class Register
 
     }
 
-    private function requestTypeIsActive() : bool
+    private function registrationMethodIsActive() : bool
     {
 
     }
