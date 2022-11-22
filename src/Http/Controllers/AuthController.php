@@ -2,11 +2,11 @@
 
 namespace neomn\laravel_auth_api\Http\Controllers;
 
-use neomn\laravel_auth_api\Http\Requests\Register\RegisterRequest;
+use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingUserNameRequest;
 
 class AuthController extends Controller
 {
-    public function register(RegisterRequest $request)
+    public function register(RegisterUsingUserNameRequest $request)
     {
         return response()->json('register');
     }
