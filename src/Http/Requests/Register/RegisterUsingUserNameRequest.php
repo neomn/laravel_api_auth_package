@@ -27,6 +27,8 @@ class RegisterUsingUserNameRequest extends FormRequest
         return [
             'user_name'=>'alpha_dash',
             'password'=>'required|min:8|max:32',
+            'first_name'=>'required|alpha_spaces|max:32',
+            'last_name'=>'required|alpha_spaces|max:32',
         ];
     }
 }
