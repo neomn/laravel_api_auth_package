@@ -31,4 +31,12 @@ class RegisterUsingUserNameRequest extends FormRequest
             'last_name'=>'required|alpha_spaces|max:32',
         ];
     }
+
+    public function messages()
+    {
+        return [
+          'first_name.alpha_spaces'=>'this field should only contain alphabetic and space characters',
+          'last_name.alpha_spaces'=>'this field should only contain alphabetic and space characters',
+        ];
+    }
 }
