@@ -6,11 +6,6 @@ use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingUserNameRequest;
 
 class AuthController extends Controller
 {
-    public function register(RegisterUsingUserNameRequest $request)
-    {
-        return response()->json('register');
-    }
-
     public function login()
     {
         return response()->json('login');
