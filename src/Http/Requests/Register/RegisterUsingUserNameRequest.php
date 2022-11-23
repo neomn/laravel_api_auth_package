@@ -25,11 +25,8 @@ class RegisterUsingUserNameRequest extends FormRequest
     public function rules()
     {
         return [
-            'first_name'=>'sometimes',
-            'last_name'=>'sometimes',
-            'phone_number'=>'sometimes',
-            'username'=>'sometimes',
-            'email'=>'alpha_spaces',
+            'user_name'=>'alpha_dash',
+            'password'=>'required|min:8|max:32',
         ];
     }
 }
