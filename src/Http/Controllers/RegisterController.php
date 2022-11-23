@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laravel_auth_api\Http\Controllers\Register;
+namespace neomn\laravel_auth_api\Http\Controllers;
 
 use neomn\laravel_auth_api\Http\Controllers\Controller;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingUserNameRequest;

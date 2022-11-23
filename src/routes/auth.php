@@ -4,7 +4,7 @@ namespace neomn\laravel_auth_api\routes;
 
 use Illuminate\Support\Facades\Route;
 use neomn\laravel_auth_api\Http\Controllers\AuthController;
-use neomn\laravel_auth_api\Http\Controllers\Register\RegisterController;
+use neomn\laravel_auth_api\Http\Controllers\RegisterController;
 use neomn\laravel_auth_api\Http\Middleware\Register;
 
 Route::prefix('api')->middleware('auth')->group(function (){
