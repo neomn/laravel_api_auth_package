@@ -25,6 +25,12 @@ class AuthOperationsTest extends TestCase
     }
 
 
+    public function test_route_register_using_social_media_exists()
+    {
+        $loginResponse = $this->post('api/auth/register/email');
+        $this->assertTrue($loginResponse->status() != 404);
+    }
+
     public function test_route_login_exists()
     {
         $loginResponse = $this->post('api/auth/login');
