@@ -48,7 +48,7 @@ class AuthOperationsTest extends TestCase
         $response->assertStatus(401);
     }
 
-    public function test_registered_successfully()
+    public function test_user_registered_successfully()
     {
         $this->assertTrue(false);
     }

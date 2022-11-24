@@ -3,7 +3,6 @@
 namespace neomn\laravel_auth_api\Http\Controllers;
 
 use Illuminate\Support\Facades\Hash;
-use neomn\laravel_auth_api\Http\Controllers\Controller;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingEmailRequest;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingPhoneNumberRequest;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingUserNameRequest;
@@ -18,7 +17,6 @@ class RegisterController extends Controller
         //register user in userDataBase
 
         // notify user that registration is completed
-
 
         return response()->json(['Successfully Registered'=>$registrationData]);
     }
