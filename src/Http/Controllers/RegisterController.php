@@ -18,17 +18,18 @@ class RegisterController extends Controller
 
         // notify user that registration is completed
 
-        //this is just a test response
+
         return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
     public function registerUsingEmail(RegisterUsingEmailRequest $request)
     {
         $registrationData = $request->safe()->all();
+        $registrationData['password'] = Hash::make($registrationData['password']);
 
         //register user in userDataBase
 
-        return response()->json('Successfully Registered');
+        return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
     public function registerUsingPhoneNumber()
