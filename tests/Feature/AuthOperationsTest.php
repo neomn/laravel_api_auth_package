@@ -6,15 +6,15 @@ use neomn\laravel_auth_api\tests\TestCase;
 
 class AuthOperationsTest extends TestCase
 {
-    public function test_login_route_exists()
+    public function test_register_using_username_route_exists()
     {
-        $loginResponse = $this->post('api/auth/login');
+        $loginResponse = $this->post('api/auth/register/username');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
-    public function test_register_route_exists()
+    public function test_login_route_exists()
     {
-        $loginResponse = $this->post('api/auth/register');
+        $loginResponse = $this->post('api/auth/login');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
