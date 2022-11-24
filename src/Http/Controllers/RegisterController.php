@@ -16,6 +16,9 @@ class RegisterController extends Controller
 
         //register user in userDataBase
 
+        // notify user that registration is completed
+
+        //this is just a test response
         return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
