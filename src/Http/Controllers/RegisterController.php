@@ -24,14 +24,14 @@ class RegisterController extends Controller
 
     public function registerUsingEmail(RegisterUsingEmailRequest $request)
     {
-        $registrationData = $request->safe()->all();
-        $registrationData['password'] = Hash::make($registrationData['password']);
+//        $registrationData = $request->safe()->all();
+//        $registrationData['password'] = Hash::make($registrationData['password']);
 
         //register user in userDataBase
 
         // notify user using its email that registration is completed
 
-        return response()->json(['Successfully Registered'=>$registrationData]);
+//        return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
     public function registerUsingPhoneNumber(RegisterUsingPhoneNumberRequest $request)

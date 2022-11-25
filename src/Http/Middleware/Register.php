@@ -20,9 +20,8 @@ class Register
     public function handle(Request $request, Closure $next)
     {
         $method = $this->identifyRegistrationMethodOfIncomingRequest($request);
-        return response()->json($method);
 
-        if ($this->registrationMethodIsNotValid('phone_number'))
+        if ($this->registrationMethodIsNotValid($method))
             return response()->json('invalid registration method',404);
 
         if ($this->registrationMethodIsNotActive($method))
@@ -65,7 +64,7 @@ class Register
     public function registrationMethodIsNotValid(string $method)
     {
         $registrationMethod = Config::get('laraAuthApi.registrationMethods.' . $method);
-        return empty($registrationMethod);
+        return $registrationMethod === '';
     }
 
     private function registrationMethodIsNotActive(string $method)
