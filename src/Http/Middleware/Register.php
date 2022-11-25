@@ -18,20 +18,12 @@ class Register
      */
     public function handle(Request $request, Closure $next)
     {
-
-//        return response()->json($this->registrationMethodIsActive('email'));
-
-        // identify registration method (username/email/social-media/phone-number)
         $method = $this->identifyRegistrationMethodOfIncomingRequest($request);
-
-
-        if ($this->registrationMethodIsNotValid($method)){
+        if ($this->registrationMethodIsNotValid($method))
             return response()->json('invalid registration method',404);
-        }
 
-        if (!$this->registrationMethodIsActive($method)){
+        if (!$this->registrationMethodIsActive($method))
             return response()->json('this registration method is not active',403);
-        }
 
         return $next($request);
     }
