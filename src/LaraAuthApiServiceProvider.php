@@ -5,6 +5,7 @@ namespace neomn\laravel_auth_api;
 use App\Models\User;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Auth\CreatesUserProviders;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
@@ -17,7 +18,7 @@ class LaraAuthApiServiceProvider extends ServiceProvider
 
     }
 
-    public function boot()
+    public function boot(Router $router)
     {
 
         $this->publishes([
@@ -26,6 +27,7 @@ class LaraAuthApiServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/routes/auth.php');
 
+       $router->aliasMiddleware('Register',\neomn\laravel_auth_api\Http\Middleware\Register::class);
 
         //Add this custom validation rule.
         Validator::extend('alpha_spaces', function ($attribute, $value) {

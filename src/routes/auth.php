@@ -11,7 +11,7 @@ Route::prefix('api')->middleware('auth')->group(function (){
 
     Route::prefix('auth')->group(function (){
 
-        Route::prefix('register')->withoutMiddleware('auth')->group(function (){
+        Route::prefix('register')->withoutMiddleware('auth')->middleware('Register')->group(function (){
             Route::post('username',[RegisterController::class,'registerUsingUserName']);
             Route::post('email',[RegisterController::class,'registerUsingEmail']);
             Route::post('phone-number',[RegisterController::class,'registerUsingPhoneNumber']);
