@@ -5,6 +5,7 @@ namespace neomn\laravel_auth_api\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
+use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 use function PHPUnit\Framework\isEmpty;
 
 class Register
@@ -32,19 +33,33 @@ class Register
 
     private function identifyRegistrationMethodOfIncomingRequest(Request $request)
     {
-        if ($request->has('user_name'))
-            return 'username';
+        $method = '';
+        $howManyRegistrationMethodPresentInRequest = 0;
 
-        if ($request->has('email'))
-            return 'email';
+        if ($request->has('user_name')){
+            $howManyRegistrationMethodPresentInRequest++;
+            $method = 'user_name';
+        }
 
-        if ($request->has('phone_number'))
-            return 'phone_number';
+        if ($request->has('email')){
+            $howManyRegistrationMethodPresentInRequest++;
+            $method = 'email';
+        }
 
-        if ($request->has('social_media'))
-            return 'social_media';
+        if ($request->has('phone_number')){
+            $howManyRegistrationMethodPresentInRequest++;
+            $method = 'phone_number';
+        }
 
-        return '';
+        if ($request->has('social_media')){
+            $howManyRegistrationMethodPresentInRequest++;
+            $method = 'social_media';
+        }
+
+        if ($howManyRegistrationMethodPresentInRequest > 1)
+            throw new BadRequestException('there is more than one registration method in request!');
+
+        return $method;
     }
 
     public function registrationMethodIsNotValid(string $method)
