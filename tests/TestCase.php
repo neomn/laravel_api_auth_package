@@ -2,11 +2,14 @@
 
 namespace neomn\laravel_auth_api\tests;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use neomn\laravel_auth_api\LaraAuthApiServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase {
 
 //    public $loadEnvironmentVariables = true;
+
+    use RefreshDatabase;
 
     public function getPackageProviders($app)
     {
