@@ -70,6 +70,6 @@ class Register
     private function registrationMethodIsNotActive(string $method)
     {
         $registrationMethod = Config::get('laraAuthApi.registrationMethods.' . $method);
-        return $registrationMethod === true;
+        return $registrationMethod === false;
     }
 }
