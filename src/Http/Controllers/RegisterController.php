@@ -12,14 +12,14 @@ class RegisterController extends Controller
 {
     public function registerUsingUserName(RegisterUsingUserNameRequest $request)
     {
-        $registrationData = $request->safe()->all();
-        $registrationData['password'] = Hash::make($registrationData['password']);
+//        $registrationData = $request->safe()->all();
+//        $registrationData['password'] = Hash::make($registrationData['password']);
 
         //register user in userDataBase
 
         // notify user that registration is completed
 
-        return response()->json(['Successfully Registered'=>$registrationData]);
+//        return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
     public function registerUsingEmail(RegisterUsingEmailRequest $request)
@@ -36,14 +36,14 @@ class RegisterController extends Controller
 
     public function registerUsingPhoneNumber(RegisterUsingPhoneNumberRequest $request)
     {
-        $registrationData = $request->safe()->all();
-        $registrationData['password'] = Hash::make($registrationData['password']);
+//        $registrationData = $request->safe()->all();
+//        $registrationData['password'] = Hash::make($registrationData['password']);
 
         //register user in userDataBase
 
         // notify user using its phone number that registration is completed
 
-        return response()->json(['Successfully Registered'=>$registrationData]);
+//        return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
     public function registerUsingSocialMedia(RegisterUsingSocialMediaRequest $request)
