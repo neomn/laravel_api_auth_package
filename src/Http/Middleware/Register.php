@@ -19,6 +19,7 @@ class Register
     public function handle(Request $request, Closure $next)
     {
         $method = $this->identifyRegistrationMethodOfIncomingRequest($request);
+        return response()->json($method);
 
         if ($this->registrationMethodIsNotValid('phone_number'))
             return response()->json('invalid registration method',404);

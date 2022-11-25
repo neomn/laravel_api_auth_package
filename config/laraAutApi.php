@@ -6,12 +6,12 @@ return [
     'registrationMethods' => [
         'phone_number' => true,
         'email' => true,
-        'username' => true,
+        'user_name' => true,
         'social_media' => true,
     ],
 
     'loginMethods' => [
-        'username' => true,
+        'user_name' => true,
         'email' => true,
         'phone_number' => true,
         'social_media' => true,
