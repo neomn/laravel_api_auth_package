@@ -5,6 +5,7 @@ namespace neomn\laravel_auth_api\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingEmailRequest;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingPhoneNumberRequest;
+use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingSocialMediaRequest;
 use neomn\laravel_auth_api\Http\Requests\Register\RegisterUsingUserNameRequest;
 
 class RegisterController extends Controller
@@ -45,7 +46,7 @@ class RegisterController extends Controller
         return response()->json(['Successfully Registered'=>$registrationData]);
     }
 
-    public function registerUsingSocialMedia()
+    public function registerUsingSocialMedia(RegisterUsingSocialMediaRequest $request)
     {
 
     }
