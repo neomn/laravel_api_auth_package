@@ -39,7 +39,7 @@ class CheckRoutesTest extends TestCase
 
     public function test_route_verify_user_exists()
     {
-        $loginResponse = $this->post('api/auth/verify-user');
+        $loginResponse = $this->post('api/auth/verify-user-account');
         $this->assertTrue($loginResponse->status() != 404);
     }
 
