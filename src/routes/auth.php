@@ -19,7 +19,7 @@ Route::prefix('api')->middleware('auth')->group(function (){
         });
 
         Route::post('login', [AuthController::class,'login'])->withoutMiddleware('auth');
-        Route::post('verify-user', [AuthController::class,'verifyUser'])->withoutMiddleware('auth');
+        Route::post('verify-user-account', [AuthController::class,'verifyUser'])->withoutMiddleware('auth');
         Route::post('update-user-info', [AuthController::class,'updateUserInfo']);
         Route::post('update-phone-number', [AuthController::class,'updatePhoneNumber']);
         Route::post('forget-password', [AuthController::class,'forgetPassword'])->withoutMiddleware('auth');
