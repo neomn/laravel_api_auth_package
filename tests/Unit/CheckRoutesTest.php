@@ -1,6 +1,6 @@
 <?php
 
-namespace neomn\laravel_auth_api\tests\Feature;
+namespace neomn\laravel_auth_api\tests\Unit;
 
 use neomn\laravel_auth_api\tests\TestCase;
 
