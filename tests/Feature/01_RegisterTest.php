@@ -4,7 +4,7 @@ namespace neomn\laravel_auth_api\tests\Feature;
 
 use neomn\laravel_auth_api\tests\TestCase;
 
-class RegisterUserTest extends TestCase
+class RegisterTest extends TestCase
 {
     public function test_register_middleware_is_working()
     {
