@@ -6,7 +6,7 @@ use neomn\laravel_auth_api\tests\TestCase;
 
 class RegisterUserTest extends TestCase
 {
-    public function test_register_middleware()
+    public function test_register_middleware_is_working()
     {
         $this->assertTrue(false);
     }
