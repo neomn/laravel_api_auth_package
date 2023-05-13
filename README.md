@@ -1,6 +1,15 @@
 
-# Laravel Authentication API
 
+<div align="center">
+  <p> <em>Under Development</em></p>
+</div>
+
+## Features
+
+...
+
+Rest of the README content...
+# Laravel Authentication API
 Laravel Authentication API is a Laravel package that provides seamless API authentication functionality for your Laravel applications. It simplifies the process of authenticating API requests and securing your API endpoints.
 
 ## Features
@@ -14,12 +23,6 @@ Laravel Authentication API is a Laravel package that provides seamless API authe
 
 ## Requirements
 
-- PHP version X.X.X or higher.
-- Laravel version X.X or higher.
+- PHP version 7.0 or higher.
+- Laravel version 8 or higher.
 
-## Installation
-
-You can install Your Package Name via Composer. Run the following command in your terminal:
-
-```shell
-composer require 
