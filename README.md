@@ -1,14 +1,6 @@
-
-
 <div align="center">
   <p> <em>Under Development</em></p>
 </div>
-
-## Features
-
-...
-
-Rest of the README content...
 # Laravel Authentication API
 Laravel Authentication API is a Laravel package that provides seamless API authentication functionality for your Laravel applications. It simplifies the process of authenticating API requests and securing your API endpoints.
 
